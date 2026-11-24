@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+}
+
+.card {
+  width: 320px;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tabs button {
+  flex: 1;
+  margin-top: 0;
+  background: #ddd;
+  color: #222;
+}
+
+.tabs button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 18px;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+#signupMessage,
+#loginMessage {
+  min-height: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
